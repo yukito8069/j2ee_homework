@@ -14,10 +14,11 @@
                                width="64px" height="64px"/></span>
                     <a data-toggle="dropdown" class="dropdown-toggle" href="#">
                         <span class="clear">
-                       <span class="block m-t-xs"><strong class="font-bold">${shiro.getUser().name}</strong></span>
+<!--                       <span class="block m-t-xs"><strong class="font-bold">${shiro.getUser().name}</strong></span>-->
                         <span class="text-muted text-xs block">${shiro.getUser().roleNames[0]}<b class="caret"></b></span>
                         </span>
                     </a>
+<!--                    下拉栏信息-->
                     <ul class="dropdown-menu m-t-xs">
                         <li><a class="J_menuItem" href="${ctxPath}/mgr/user_info">个人资料</a></li>
                         <li><a class="J_menuItem" href="${ctxPath}/mgr/user_chpwd">修改密码</a></li>
@@ -29,7 +30,6 @@
                 <div class="logo-element">GS
                 </div>
             </li>
-            
             @for(title in titles){
                 @if(tool.isEmpty(title.children)){
                     <li>
@@ -40,6 +40,7 @@
                     </li>
                 @}else{
                     <li>
+<!--                        系统管理部分-->
                         <a href="#">
                             <i class="fa ${title.icon}"></i>
                             <span class="nav-label">${title.name}</span>
