@@ -1,0 +1,12 @@
+cn\stylefeng\guns\multi\service\impl\TestServiceImpl.class
+cn\stylefeng\guns\multi\service\TestService.class
+cn\stylefeng\guns\multi\test\BizTest.class
+cn\stylefeng\guns\system\UserTest.class
+cn\stylefeng\guns\system\DeptTest.class
+cn\stylefeng\guns\multi\mapper\TestMapper.class
+cn\stylefeng\guns\system\BlackBoardTest.class
+cn\stylefeng\guns\shiro\Base64Test.class
+cn\stylefeng\guns\system\DictTest.class
+cn\stylefeng\guns\system\MenuTest.class
+cn\stylefeng\guns\multi\entity\Test.class
+cn\stylefeng\guns\base\BaseJunit.class
