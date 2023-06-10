@@ -8,7 +8,7 @@ import com.baomidou.mybatisplus.service.IService;
  *  服务类
  * </p>
  *
- * @author zxx
+ * @author zyy
  * @since 2018-12-29
  */
 public interface IMedicineInfoService extends IService<MedicineInfo> {

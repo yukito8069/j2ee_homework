@@ -1,5 +1,5 @@
 /**
- * 初始化居民健康信息管理详情对话框
+ * 初始化健康信息管理详情对话框
  */
 var PatientHealthInfoDlg = {
     patientHealthInfoData : {}

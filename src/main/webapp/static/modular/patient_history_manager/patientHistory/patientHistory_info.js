@@ -1,5 +1,5 @@
 /**
- * 初始化居民就诊历史管理详情对话框
+ * 初始化就诊历史管理详情对话框
  */
 var PatientHistoryInfoDlg = {
     patientHistoryInfoData : {}

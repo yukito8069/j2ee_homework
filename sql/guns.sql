@@ -1,7 +1,7 @@
 /*
 Navicat MySQL Data Transfer
 
-Source Server         : zxx
+Source Server         : zyy
 Source Server Version : 50720
 Source Host           : localhost:3306
 Source Database       : guns
@@ -269,9 +269,9 @@ INSERT INTO `sys_login_log` VALUES ('251', '登录日志', '1', '2018-12-29 16:1
 INSERT INTO `sys_login_log` VALUES ('252', '登录日志', '1', '2018-12-29 16:25:48', '成功', null, '0:0:0:0:0:0:0:1');
 INSERT INTO `sys_login_log` VALUES ('253', '登录日志', '1', '2018-12-29 16:28:20', '成功', null, '0:0:0:0:0:0:0:1');
 INSERT INTO `sys_login_log` VALUES ('254', '退出日志', '1', '2018-12-29 16:29:41', '成功', null, '0:0:0:0:0:0:0:1');
-INSERT INTO `sys_login_log` VALUES ('255', '登录失败日志', null, '2018-12-29 16:29:45', '成功', '账号:zxx,账号密码错误', '0:0:0:0:0:0:0:1');
-INSERT INTO `sys_login_log` VALUES ('256', '登录失败日志', null, '2018-12-29 16:29:51', '成功', '账号:zxx,账号密码错误', '0:0:0:0:0:0:0:1');
-INSERT INTO `sys_login_log` VALUES ('257', '登录失败日志', null, '2018-12-29 16:29:56', '成功', '账号:zxx,账号密码错误', '0:0:0:0:0:0:0:1');
+INSERT INTO `sys_login_log` VALUES ('255', '登录失败日志', null, '2018-12-29 16:29:45', '成功', '账号:zyy,账号密码错误', '0:0:0:0:0:0:0:1');
+INSERT INTO `sys_login_log` VALUES ('256', '登录失败日志', null, '2018-12-29 16:29:51', '成功', '账号:zyy,账号密码错误', '0:0:0:0:0:0:0:1');
+INSERT INTO `sys_login_log` VALUES ('257', '登录失败日志', null, '2018-12-29 16:29:56', '成功', '账号:zyy,账号密码错误', '0:0:0:0:0:0:0:1');
 INSERT INTO `sys_login_log` VALUES ('258', '登录日志', '1', '2018-12-29 16:29:59', '成功', null, '0:0:0:0:0:0:0:1');
 INSERT INTO `sys_login_log` VALUES ('259', '退出日志', '1', '2018-12-29 16:30:13', '成功', null, '0:0:0:0:0:0:0:1');
 INSERT INTO `sys_login_log` VALUES ('260', '登录失败日志', null, '2018-12-29 16:30:20', '成功', '账号:doctor,账号密码错误', '0:0:0:0:0:0:0:1');
@@ -491,7 +491,7 @@ INSERT INTO `sys_operation_log` VALUES ('586', '业务日志', '删除菜单', '
 INSERT INTO `sys_operation_log` VALUES ('587', '业务日志', '删除菜单', '1', 'cn.stylefeng.guns.modular.system.controller.MenuController', 'remove', '2018-12-29 16:29:18', '成功', '菜单id=1078926603995541511');
 INSERT INTO `sys_operation_log` VALUES ('588', '业务日志', '删除菜单', '1', 'cn.stylefeng.guns.modular.system.controller.MenuController', 'remove', '2018-12-29 16:29:24', '成功', '菜单id=1078926603995541509');
 INSERT INTO `sys_operation_log` VALUES ('589', '业务日志', '删除菜单', '1', 'cn.stylefeng.guns.modular.system.controller.MenuController', 'remove', '2018-12-29 16:29:30', '成功', '菜单id=1078926603995541510');
-INSERT INTO `sys_operation_log` VALUES ('590', '业务日志', '修改管理员', '47', 'cn.stylefeng.guns.modular.system.controller.UserMgrController', 'edit', '2018-12-29 16:34:47', '成功', '账号=doctor;;;字段名称:null,旧值:aadc22d1732bb641140ef39ffc4e6880,新值:;;;字段名称:名字,旧值:zxx,新值:管理员');
+INSERT INTO `sys_operation_log` VALUES ('590', '业务日志', '修改管理员', '47', 'cn.stylefeng.guns.modular.system.controller.UserMgrController', 'edit', '2018-12-29 16:34:47', '成功', '账号=doctor;;;字段名称:null,旧值:aadc22d1732bb641140ef39ffc4e6880,新值:;;;字段名称:名字,旧值:zyy,新值:管理员');
 INSERT INTO `sys_operation_log` VALUES ('591', '业务日志', '修改菜单', '1', 'cn.stylefeng.guns.modular.system.controller.MenuController', 'edit', '2018-12-29 16:48:22', '成功', '菜单名称=信息;;;');
 INSERT INTO `sys_operation_log` VALUES ('592', '业务日志', '删除菜单', '1', 'cn.stylefeng.guns.modular.system.controller.MenuController', 'remove', '2018-12-29 16:55:26', '成功', '菜单id=1078935078062510082');
 INSERT INTO `sys_operation_log` VALUES ('593', '业务日志', '删除菜单', '1', 'cn.stylefeng.guns.modular.system.controller.MenuController', 'remove', '2018-12-29 16:55:41', '成功', '菜单id=1078936438652784641');

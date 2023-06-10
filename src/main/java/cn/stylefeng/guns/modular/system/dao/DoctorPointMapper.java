@@ -8,7 +8,7 @@ import com.baomidou.mybatisplus.mapper.BaseMapper;
  *  Mapper 接口
  * </p>
  *
- * @author zxx
+ * @author zyy
  * @since 2018-12-29
  */
 public interface DoctorPointMapper extends BaseMapper<DoctorPoint> {

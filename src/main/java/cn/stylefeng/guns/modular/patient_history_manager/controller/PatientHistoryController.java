@@ -16,7 +16,7 @@ import cn.stylefeng.guns.modular.system.model.PatientHistory;
 import cn.stylefeng.guns.modular.patient_history_manager.service.IPatientHistoryService;
 
 /**
- * 居民就诊历史管理控制器
+ * 就诊历史管理控制器
  *
  * @author fengshuonan
  * @Date 2018-12-29 17:16:39
@@ -31,7 +31,7 @@ public class PatientHistoryController extends BaseController {
     private IPatientHistoryService patientHistoryService;
 
     /**
-     * 跳转到居民就诊历史管理首页
+     * 跳转到就诊历史管理首页
      */
     @RequestMapping("")
     public String index() {
@@ -39,7 +39,7 @@ public class PatientHistoryController extends BaseController {
     }
 
     /**
-     * 跳转到添加居民就诊历史管理
+     * 跳转到添加就诊历史管理
      */
     @RequestMapping("/patientHistory_add")
     public String patientHistoryAdd() {
@@ -47,7 +47,7 @@ public class PatientHistoryController extends BaseController {
     }
 
     /**
-     * 跳转到修改居民就诊历史管理
+     * 跳转到修改就诊历史管理
      */
     @RequestMapping("/patientHistory_update/{patientHistoryId}")
     public String patientHistoryUpdate(@PathVariable Integer patientHistoryId, Model model) {
@@ -58,7 +58,7 @@ public class PatientHistoryController extends BaseController {
     }
 
     /**
-     * 获取居民就诊历史管理列表
+     * 获取就诊历史管理列表
      */
     @RequestMapping(value = "/list")
     @ResponseBody
@@ -68,7 +68,7 @@ public class PatientHistoryController extends BaseController {
     }
 
     /**
-     * 新增居民就诊历史管理
+     * 新增就诊历史管理
      */
     @RequestMapping(value = "/add")
     @ResponseBody
@@ -78,7 +78,7 @@ public class PatientHistoryController extends BaseController {
     }
 
     /**
-     * 删除居民就诊历史管理
+     * 删除就诊历史管理
      */
     @RequestMapping(value = "/delete")
     @ResponseBody
@@ -88,7 +88,7 @@ public class PatientHistoryController extends BaseController {
     }
 
     /**
-     * 修改居民就诊历史管理
+     * 修改就诊历史管理
      */
     @RequestMapping(value = "/update")
     @ResponseBody
@@ -98,7 +98,7 @@ public class PatientHistoryController extends BaseController {
     }
 
     /**
-     * 居民就诊历史管理详情
+     * 就诊历史管理详情
      */
     @RequestMapping(value = "/detail/{patientHistoryId}")
     @ResponseBody

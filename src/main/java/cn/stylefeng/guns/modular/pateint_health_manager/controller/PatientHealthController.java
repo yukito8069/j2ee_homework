@@ -16,7 +16,7 @@ import cn.stylefeng.guns.modular.system.model.PatientHealth;
 import cn.stylefeng.guns.modular.pateint_health_manager.service.IPatientHealthService;
 
 /**
- * 居民健康信息管理控制器
+ * 健康信息管理控制器
  *
  * @author fengshuonan
  * @Date 2018-12-29 16:51:07
@@ -31,7 +31,7 @@ public class PatientHealthController extends BaseController {
     private IPatientHealthService patientHealthService;
 
     /**
-     * 跳转到居民健康信息管理首页
+     * 跳转到健康信息管理首页
      */
     @RequestMapping("")
     public String index() {
@@ -39,7 +39,7 @@ public class PatientHealthController extends BaseController {
     }
 
     /**
-     * 跳转到添加居民健康信息管理
+     * 跳转到添加健康信息管理
      */
     @RequestMapping("/patientHealth_add")
     public String patientHealthAdd() {
@@ -47,7 +47,7 @@ public class PatientHealthController extends BaseController {
     }
 
     /**
-     * 跳转到修改居民健康信息管理
+     * 跳转到修改健康信息管理
      */
     @RequestMapping("/patientHealth_update/{patientHealthId}")
     public String patientHealthUpdate(@PathVariable Integer patientHealthId, Model model) {
@@ -58,7 +58,7 @@ public class PatientHealthController extends BaseController {
     }
 
     /**
-     * 获取居民健康信息管理列表
+     * 获取健康信息管理列表
      */
     @RequestMapping(value = "/list")
     @ResponseBody
@@ -68,7 +68,7 @@ public class PatientHealthController extends BaseController {
     }
 
     /**
-     * 新增居民健康信息管理
+     * 新增健康信息管理
      */
     @RequestMapping(value = "/add")
     @ResponseBody
@@ -78,7 +78,7 @@ public class PatientHealthController extends BaseController {
     }
 
     /**
-     * 删除居民健康信息管理
+     * 删除健康信息管理
      */
     @RequestMapping(value = "/delete")
     @ResponseBody
@@ -88,7 +88,7 @@ public class PatientHealthController extends BaseController {
     }
 
     /**
-     * 修改居民健康信息管理
+     * 修改健康信息管理
      */
     @RequestMapping(value = "/update")
     @ResponseBody
@@ -98,7 +98,7 @@ public class PatientHealthController extends BaseController {
     }
 
     /**
-     * 居民健康信息管理详情
+     * 健康信息管理详情
      */
     @RequestMapping(value = "/detail/{patientHealthId}")
     @ResponseBody

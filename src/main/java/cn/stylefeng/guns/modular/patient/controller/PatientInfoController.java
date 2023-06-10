@@ -16,7 +16,7 @@ import cn.stylefeng.guns.modular.system.model.PatientInfo;
 import cn.stylefeng.guns.modular.patient.service.IPatientInfoService;
 
 /**
- * 居民管理控制器
+ * 管理控制器
  *
  * @author fengshuonan
  * @Date 2018-12-29 15:57:18
@@ -31,7 +31,7 @@ public class PatientInfoController extends BaseController {
     private IPatientInfoService patientInfoService;
 
     /**
-     * 跳转到居民管理首页
+     * 跳转到管理首页
      */
     @RequestMapping("")
     public String index() {
@@ -39,7 +39,7 @@ public class PatientInfoController extends BaseController {
     }
 
     /**
-     * 跳转到添加居民管理
+     * 跳转到添加管理
      */
     @RequestMapping("/patientInfo_add")
     public String patientInfoAdd() {
@@ -47,7 +47,7 @@ public class PatientInfoController extends BaseController {
     }
 
     /**
-     * 跳转到修改居民管理
+     * 跳转到修改管理
      */
     @RequestMapping("/patientInfo_update/{patientInfoId}")
     public String patientInfoUpdate(@PathVariable Integer patientInfoId, Model model) {
@@ -58,7 +58,7 @@ public class PatientInfoController extends BaseController {
     }
 
     /**
-     * 获取居民管理列表
+     * 获取管理列表
      */
     @RequestMapping(value = "/list")
     @ResponseBody
@@ -68,7 +68,7 @@ public class PatientInfoController extends BaseController {
     }
 
     /**
-     * 新增居民管理
+     * 新增管理
      */
     @RequestMapping(value = "/add")
     @ResponseBody
@@ -78,7 +78,7 @@ public class PatientInfoController extends BaseController {
     }
 
     /**
-     * 删除居民管理
+     * 删除管理
      */
     @RequestMapping(value = "/delete")
     @ResponseBody
@@ -88,7 +88,7 @@ public class PatientInfoController extends BaseController {
     }
 
     /**
-     * 修改居民管理
+     * 修改管理
      */
     @RequestMapping(value = "/update")
     @ResponseBody
@@ -98,7 +98,7 @@ public class PatientInfoController extends BaseController {
     }
 
     /**
-     * 居民管理详情
+     * 管理详情
      */
     @RequestMapping(value = "/detail/{patientInfoId}")
     @ResponseBody
