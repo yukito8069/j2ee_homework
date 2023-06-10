@@ -1,5 +1,5 @@
 /**
- * 居民健康信息管理管理初始化
+ * 健康信息管理管理初始化
  */
 var PatientHealth = {
     id: "PatientHealthTable",	//表格id
@@ -15,8 +15,8 @@ PatientHealth.initColumn = function () {
     return [
         {field: 'selectItem', radio: true},
         {title: '编号', field: 'id', visible: true, align: 'center', valign: 'middle'},
-        {title: '居民身份证', field: 'patientIdcard', visible: true, align: 'center', valign: 'middle'},
-        {title: '居民姓名', field: 'patientName', visible: true, align: 'center', valign: 'middle'},
+        {title: '身份证', field: 'patientIdcard', visible: true, align: 'center', valign: 'middle'},
+        {title: '姓名', field: 'patientName', visible: true, align: 'center', valign: 'middle'},
         {title: '心跳', field: 'heartJump', visible: true, align: 'center', valign: 'middle'},
         {title: '血压', field: 'bloodPressure', visible: true, align: 'center', valign: 'middle'},
         {title: '血氧', field: 'bloodOx', visible: true, align: 'center', valign: 'middle'},
@@ -41,12 +41,12 @@ PatientHealth.check = function () {
 };
 
 /**
- * 点击添加居民健康信息管理
+ * 点击添加健康信息管理
  */
 PatientHealth.openAddPatientHealth = function () {
     var index = layer.open({
         type: 2,
-        title: '添加居民健康信息管理',
+        title: '添加健康信息管理',
         area: ['800px', '420px'], //宽高
         fix: false, //不固定
         maxmin: true,
@@ -56,13 +56,13 @@ PatientHealth.openAddPatientHealth = function () {
 };
 
 /**
- * 打开查看居民健康信息管理详情
+ * 打开查看健康信息管理详情
  */
 PatientHealth.openPatientHealthDetail = function () {
     if (this.check()) {
         var index = layer.open({
             type: 2,
-            title: '居民健康信息管理详情',
+            title: '健康信息管理详情',
             area: ['800px', '420px'], //宽高
             fix: false, //不固定
             maxmin: true,
@@ -73,7 +73,7 @@ PatientHealth.openPatientHealthDetail = function () {
 };
 
 /**
- * 删除居民健康信息管理
+ * 删除健康信息管理
  */
 PatientHealth.delete = function () {
     if (this.check()) {
@@ -89,7 +89,7 @@ PatientHealth.delete = function () {
 };
 
 /**
- * 查询居民健康信息管理列表
+ * 查询健康信息管理列表
  */
 PatientHealth.search = function () {
     var queryData = {};

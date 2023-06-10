@@ -1,5 +1,5 @@
 /**
- * 初始化居民管理详情对话框
+ * 初始化管理详情对话框
  */
 var PatientInfoInfoDlg = {
     patientInfoInfoData : {}

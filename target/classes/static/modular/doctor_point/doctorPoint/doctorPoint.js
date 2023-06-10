@@ -15,8 +15,8 @@ DoctorPoint.initColumn = function () {
     return [
         {field: 'selectItem', radio: true},
             {title: '编号', field: 'id', visible: true, align: 'center', valign: 'middle'},
-            {title: '预约居民身份证', field: 'patientIdcard', visible: true, align: 'center', valign: 'middle'},
-            {title: '居民姓名', field: 'patientName', visible: true, align: 'center', valign: 'middle'},
+            {title: '身份证', field: 'patientIdcard', visible: true, align: 'center', valign: 'middle'},
+            {title: '姓名', field: 'patientName', visible: true, align: 'center', valign: 'middle'},
             {title: '医生姓名', field: 'doctorName', visible: true, align: 'center', valign: 'middle'},
             {title: '预约时间', field: 'pointDate', visible: true, align: 'center', valign: 'middle'},
             {title: '预约地点', field: 'pointPlace', visible: true, align: 'center', valign: 'middle'}

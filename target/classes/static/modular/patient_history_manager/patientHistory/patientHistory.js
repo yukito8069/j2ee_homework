@@ -1,5 +1,5 @@
 /**
- * 居民就诊历史管理管理初始化
+ * 就诊历史管理管理初始化
  */
 var PatientHistory = {
     id: "PatientHistoryTable",	//表格id
@@ -15,8 +15,8 @@ PatientHistory.initColumn = function () {
     return [
         {field: 'selectItem', radio: true},
             {title: '编号', field: 'id', visible: true, align: 'center', valign: 'middle'},
-            {title: '居民身份证', field: 'patientIdcard', visible: true, align: 'center', valign: 'middle'},
-            {title: '居民姓名', field: 'patientName', visible: true, align: 'center', valign: 'middle'},
+            {title: '身份证', field: 'patientIdcard', visible: true, align: 'center', valign: 'middle'},
+            {title: '姓名', field: 'patientName', visible: true, align: 'center', valign: 'middle'},
             {title: '症状', field: 'patientSym', visible: true, align: 'center', valign: 'middle'},
             {title: '主治医生', field: 'patientDoctor', visible: true, align: 'center', valign: 'middle'},
             {title: '治疗药物', field: 'patientMedicine', visible: true, align: 'center', valign: 'middle'},
@@ -40,12 +40,12 @@ PatientHistory.check = function () {
 };
 
 /**
- * 点击添加居民就诊历史管理
+ * 点击添加就诊历史管理
  */
 PatientHistory.openAddPatientHistory = function () {
     var index = layer.open({
         type: 2,
-        title: '添加居民就诊历史管理',
+        title: '添加就诊历史管理',
         area: ['800px', '420px'], //宽高
         fix: false, //不固定
         maxmin: true,
@@ -55,13 +55,13 @@ PatientHistory.openAddPatientHistory = function () {
 };
 
 /**
- * 打开查看居民就诊历史管理详情
+ * 打开查看就诊历史管理详情
  */
 PatientHistory.openPatientHistoryDetail = function () {
     if (this.check()) {
         var index = layer.open({
             type: 2,
-            title: '居民就诊历史管理详情',
+            title: '就诊历史管理详情',
             area: ['800px', '420px'], //宽高
             fix: false, //不固定
             maxmin: true,
@@ -72,7 +72,7 @@ PatientHistory.openPatientHistoryDetail = function () {
 };
 
 /**
- * 删除居民就诊历史管理
+ * 删除就诊历史管理
  */
 PatientHistory.delete = function () {
     if (this.check()) {
@@ -88,7 +88,7 @@ PatientHistory.delete = function () {
 };
 
 /**
- * 查询居民就诊历史管理列表
+ * 查询就诊历史管理列表
  */
 PatientHistory.search = function () {
     var queryData = {};

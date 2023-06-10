@@ -1,5 +1,5 @@
 /**
- * 居民信息管理初始化
+ * 信息管理初始化
  */
 var PatientHealth = {
     id: "PatientHealthTable",	//表格id
@@ -40,12 +40,12 @@ PatientHealth.check = function () {
 };
 
 /**
- * 点击添加居民信息
+ * 点击添加信息
  */
 PatientHealth.openAddPatientHealth = function () {
     var index = layer.open({
         type: 2,
-        title: '添加居民信息',
+        title: '添加信息',
         area: ['800px', '420px'], //宽高
         fix: false, //不固定
         maxmin: true,
@@ -55,13 +55,13 @@ PatientHealth.openAddPatientHealth = function () {
 };
 
 /**
- * 打开查看居民信息详情
+ * 打开查看信息详情
  */
 PatientHealth.openPatientHealthDetail = function () {
     if (this.check()) {
         var index = layer.open({
             type: 2,
-            title: '居民信息详情',
+            title: '信息详情',
             area: ['800px', '420px'], //宽高
             fix: false, //不固定
             maxmin: true,
@@ -72,7 +72,7 @@ PatientHealth.openPatientHealthDetail = function () {
 };
 
 /**
- * 删除居民信息
+ * 删除信息
  */
 PatientHealth.delete = function () {
     if (this.check()) {
@@ -88,7 +88,7 @@ PatientHealth.delete = function () {
 };
 
 /**
- * 查询居民信息列表
+ * 查询信息列表
  */
 PatientHealth.search = function () {
     var queryData = {};

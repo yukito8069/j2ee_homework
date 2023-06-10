@@ -15,7 +15,7 @@ Order.initColumn = function () {
     return [
         {field: 'selectItem', radio: true},
             {title: '编号', field: 'id', visible: true, align: 'center', valign: 'middle'},
-            {title: '预约身份证', field: 'patientIdcard', visible: true, align: 'center', valign: 'middle'},
+            {title: '身份证', field: 'patientIdcard', visible: true, align: 'center', valign: 'middle'},
             {title: '预约姓名', field: 'patientName', visible: true, align: 'center', valign: 'middle'},
             {title: '预约时间', field: 'orderTime', visible: true, align: 'center', valign: 'middle'},
             {title: '预约地点', field: 'orderPlace', visible: true, align: 'center', valign: 'middle'}

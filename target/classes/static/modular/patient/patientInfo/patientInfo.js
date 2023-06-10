@@ -1,5 +1,5 @@
 /**
- * 居民管理管理初始化
+ * 管理管理初始化
  */
 var PatientInfo = {
     id: "PatientInfoTable",	//表格id
@@ -14,7 +14,7 @@ var PatientInfo = {
 PatientInfo.initColumn = function () {
     return [
         {field: 'selectItem', radio: true},
-            {title: '居民身份证', field: 'paientIdcard', visible: true, align: 'center', valign: 'middle'},
+            {title: '身份证', field: 'paientIdcard', visible: true, align: 'center', valign: 'middle'},
             {title: '姓名', field: 'paientName', visible: true, align: 'center', valign: 'middle'},
             {title: '医保余额', field: 'paientMoney', visible: true, align: 'center', valign: 'middle'}
     ];
@@ -35,12 +35,12 @@ PatientInfo.check = function () {
 };
 
 /**
- * 点击添加居民管理
+ * 点击添加管理
  */
 PatientInfo.openAddPatientInfo = function () {
     var index = layer.open({
         type: 2,
-        title: '添加居民管理',
+        title: '添加管理',
         area: ['800px', '420px'], //宽高
         fix: false, //不固定
         maxmin: true,
@@ -50,13 +50,13 @@ PatientInfo.openAddPatientInfo = function () {
 };
 
 /**
- * 打开查看居民管理详情
+ * 打开查看管理详情
  */
 PatientInfo.openPatientInfoDetail = function () {
     if (this.check()) {
         var index = layer.open({
             type: 2,
-            title: '居民管理详情',
+            title: '管理详情',
             area: ['800px', '420px'], //宽高
             fix: false, //不固定
             maxmin: true,
@@ -67,7 +67,7 @@ PatientInfo.openPatientInfoDetail = function () {
 };
 
 /**
- * 删除居民管理
+ * 删除管理
  */
 PatientInfo.delete = function () {
     if (this.check()) {
@@ -83,7 +83,7 @@ PatientInfo.delete = function () {
 };
 
 /**
- * 查询居民管理列表
+ * 查询管理列表
  */
 PatientInfo.search = function () {
     var queryData = {};
