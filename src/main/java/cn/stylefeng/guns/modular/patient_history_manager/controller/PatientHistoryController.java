@@ -1,6 +1,9 @@
 package cn.stylefeng.guns.modular.patient_history_manager.controller;
 
+import cn.stylefeng.guns.modular.system.model.PatientInfo;
 import cn.stylefeng.roses.core.base.controller.BaseController;
+import cn.stylefeng.roses.core.util.ToolUtil;
+import com.baomidou.mybatisplus.mapper.EntityWrapper;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
@@ -60,7 +63,8 @@ public class PatientHistoryController extends BaseController {
     @RequestMapping(value = "/list")
     @ResponseBody
     public Object list(String condition) {
-        return patientHistoryService.selectList(null);
+        if (ToolUtil.isNotEmpty(condition)) return patientHistoryService.selectList(new EntityWrapper<PatientHistory>().like("patient_idcard", "%" + condition + "%"));
+        else return patientHistoryService.selectList(null);
     }
 
     /**

@@ -1,6 +1,9 @@
 package cn.stylefeng.guns.modular.doctor_point.controller;
 
+import cn.stylefeng.guns.modular.system.model.MedicineInfo;
 import cn.stylefeng.roses.core.base.controller.BaseController;
+import cn.stylefeng.roses.core.util.ToolUtil;
+import com.baomidou.mybatisplus.mapper.EntityWrapper;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
@@ -60,7 +63,8 @@ public class DoctorPointController extends BaseController {
     @RequestMapping(value = "/list")
     @ResponseBody
     public Object list(String condition) {
-        return doctorPointService.selectList(null);
+        if (ToolUtil.isNotEmpty(condition)) return doctorPointService.selectList(new EntityWrapper<DoctorPoint>().like("patient_idcard", "%" + condition + "%"));
+        else return doctorPointService.selectList(null);
     }
 
     /**
